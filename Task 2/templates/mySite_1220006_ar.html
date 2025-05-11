@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة محلية</title>
+    <link rel="stylesheet" href="../static/css/mySite_1220006_ar.css">
+</head>
+
+<body class="body">
+    <h1>صفحة محلية</h1>
+    <p>ابحث عن أي صورة أو فيديو فقط بإدخال اسمه!</p>
+
+    <form method="GET" action="request_handler">
+        <label for="material">أدخل اسم الملف:</label>
+        <input type="text" id="material" name="material" placeholder="مثال: التبديل بالحزم" required>
+        <label>
+            <input type="radio" name="type" value="image" checked> صورة
+        </label>
+        <label>
+            <input type="radio" name="type" value="video"> فيديو
+        </label>
+        <button type="submit">بحث</button>
+    </form>
+</body>
+
+</html>

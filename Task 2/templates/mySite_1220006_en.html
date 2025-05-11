@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Webpage</title>
+    <link rel="stylesheet" href="../static/css/mySite_1220006_en.css">
+</head>
+
+<body class="body">
+    <h1>Local Webpage</h1>
+    <p>Search for any image or video by simply entering its name!</p>
+
+    <form method="GET" action="request_handler">
+        <label for="material">Enter File Name:</label>
+        <input type="text" id="material" name="material" placeholder="Ex: Packet Switching" required>
+        <label>
+            <input type="radio" name="type" value="image" checked> Image
+        </label>
+        <label>
+            <input type="radio" name="type" value="video"> Video
+        </label>
+        <button type="submit">Search</button>
+    </form>
+</body>
+
+</html>
